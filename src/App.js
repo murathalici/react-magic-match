@@ -3,12 +3,12 @@ import SingleCard from "./components/SingleCard";
 import "./App.css";
 
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: "/img/ferdi.png", matched: false },
+  { src: "/img/kim.png", matched: false },
+  { src: "/img/sosa.png", matched: false },
+  { src: "/img/valencia.png", matched: false },
+  { src: "/img/ozil.png", matched: false },
+  { src: "/img/irfan.png", matched: false },
 ];
 
 function App() {
@@ -46,7 +46,9 @@ function App() {
         });
         resetTurn();
       } else {
-        resetTurn();
+        setTimeout(() => {
+          resetTurn();
+        }, 1000);
       }
     }
   }, [choiceOne, choiceTwo]);
